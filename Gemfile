@@ -9,8 +9,7 @@ group :development do
     gem 'html2slim'
 end
 group :production do
-    gem 'pg'
-    gem 'rails_12factor'
+gem 'rails_12factor'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
