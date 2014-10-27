@@ -5,9 +5,9 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = Post.new(post_params)
-    if @post.save
-      redirect_to root_path, notice: 'Post created'
+   @post = current_user.posts.build(post_params)
+   if @post.save
+      redirect_to root_path
     else
       render :index
     end
@@ -18,6 +18,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:body)
+    params.require(:post).permit(:body,:user_id)
   end
 end

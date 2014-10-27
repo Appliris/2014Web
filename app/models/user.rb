@@ -9,5 +9,6 @@ class User < ActiveRecord::Base
   def has_role?(name)
     self.roles.where(name: name).length > 0
   end
-
+  
+  has_many :posts
 end
