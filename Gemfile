@@ -37,6 +37,11 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#confirm gems
 gem 'rails_admin'
 gem 'cancan'
 gem 'devise'
+#picture gems
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
