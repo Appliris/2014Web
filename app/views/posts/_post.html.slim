@@ -1,0 +1,8 @@
+.row.post
+  = post.id
+  = link_to "like",  {:controller => "posts", :id => post.id ,:action => "like"},{:method => "GET"}
+  = post.user.username
+  | : 
+  = post.body
+  = image_tag post.image_url(:thumb)
+  = post.reputation_for(:likes).to_i

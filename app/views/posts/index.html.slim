@@ -1,0 +1,25 @@
+p.navbar-text.pull-right
+  - if user_signed_in?
+    |  Logged in as 
+    strong
+      = current_user.email
+    | . 
+    = link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link'
+    |  | 
+    = link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'
+  - else
+    = link_to "Sign up", new_user_registration_path, :class => 'navbar-link'
+    |  | 
+    = link_to "Login", new_user_session_path, :class => 'navbar-link'
+  h1
+    | 投稿一覧
+  = form_for @post, html: { class: 'form post-form' } do |f|
+    .form-group.row
+      .col-lg-11
+        = f.text_area :body, class: 'form-control'
+      .col-lg-11
+        = f.file_field :image,class: 'page_fine_name'
+      .col-lg-1
+        = f.submit '投稿', class: 'btn btn-primary'
+    .posts
+      = render @posts
