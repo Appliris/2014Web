@@ -35,7 +35,7 @@ class Ability
       if user.has_role?('superadmin')
         can :manage, :all
       else
-        can :manage, [] # A
+        can :read, :all # A
       end
     else
       can :read, [] # B
