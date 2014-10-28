@@ -1,5 +1,4 @@
 //Navigation 
-
 ul id="nav-bar"
   li
     =link_to 'TOP', 'http://Google.com'
@@ -9,29 +8,29 @@ ul id="nav-bar"
     =link_to 'About' ,'http://Google.com'
   li
     =link_to 'Contact','http://Yahoo.com'
-h1 TimeTable
-
+h1 11/1のタイムテーブル
+=link_to '1日目', timetable_first_path
+=link_to '2日目', timetable_second_path
+=link_to '3日目', timetable_third_path
 table.timetable-table
   thead
     th
+    th.timetable-place
+      span.inner
+        span.place
+          | 第一体育館
     th.timetable-date
       span.inner
-        span.month
-          | 10/31
-        span.day
-          | 金
+        span.place
+          | 第二体育館
     th.timetable-date
       span.inner
-        span.month
-          | 11/1
-        span.day
-          | 土
+        span.place
+          |  学生食堂 
     th.timetable-date
       span.inner
-        span.month
-          | 11/2
-        span.day
-          | 日
+        span.place
+          | 　その他　
   tbody
     tr
       td.timetable-time
@@ -40,40 +39,37 @@ table.timetable-table
       td
       td
       td
-        span
-          | ●
+      td
     tr
       td.timetable-time
         span
           | 09:30
       td
       td
-        span
-          | ●
       td
-        span
-          | ●
+      td
     tr
       td.timetable-time
         span
           | 10:00
+      td rowspan="2" bgcolor="#f6b3a6" 機械科演劇
+      td rowspan="2" bgcolor="#f6b3a6" ビンゴ大会その1
       td
-      td
-      td
+      td  
     tr
       td.timetable-time
         span
           | 10:30
       td
       td
-      td
     tr
       td.timetable-time
         span
           | 11:00
+      td rowspan="3" bgcolor="#f6b3a6" 電気科演劇
       td
       td
-      td
+      td  
     tr
       td.timetable-time
         span
@@ -86,7 +82,7 @@ table.timetable-table
         span
           | 12:00
       td
-      td
+      td 
       td
     tr
       td.timetable-time
@@ -94,50 +90,39 @@ table.timetable-table
           | 12:30
       td
       td
-      td rowspan="3"
-        span
-          | ●
+      td 
+      td bgcolor="#f6b3a6" 吹奏楽部部活動紹介
     tr
       td.timetable-time
         span
           | 13:00
       td
+      td 
+      td rowspan="5" bgcolor="#f6b3a6" LIVE JAMJAM
       td
-      
     tr
       td.timetable-time
         span
           | 13:30
+      td rowspan="2" bgcolor="#f6b3a6" 環境科演劇
       td
       td
-        span
-          | ●
     tr
       td.timetable-time
         span
           | 14:00
-      td
-      td
-      td
-    tr
-      td.timetable-time
-        span
-          | 14:30
-      td
-      td
+      td rowspan="2" bgcolor="#f6b3a6" ビンゴ大会その2
       td
     tr
       td.timetable-time
         span
           | 14:30
-      td
-      td
+      td rowspan="3" bgcolor="#f6b3a6" 制御科演劇
       td
     tr
       td.timetable-time
         span
           | 15:00
-      td
       td
       td
     tr
@@ -146,30 +131,27 @@ table.timetable-table
           | 15:30
       td
       td
+      td
     tr
       td.timetable-time
         span
           | 16:00
+      td rowspan="2" bgcolor="#f6b3a6" 物質科演劇
       td
       td
       td
-        span
-          | ●
     tr
       td.timetable-time
         span
           | 16:30
       td
       td
-        span
-          | ●
       td
-        span
-          | ●
     tr
       td.timetable-time
         span
           | 17:00
+      td 
       td
       td
       td
@@ -180,10 +162,12 @@ table.timetable-table
       td
       td
       td
+      td
     tr
       td.timetable-time
         span
           | 18:00
+      td
       td
       td
       td
@@ -193,16 +177,5 @@ table.timetable-table
           | 18:30
       td
       td
-      td
-    tr
-      td.timetable-time
-        span
-          | 19:00
-      td
-      td
-    tr
-      td.timetable-time
-        span
-          | 19:30
       td
       td

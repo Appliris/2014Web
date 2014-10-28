@@ -64,7 +64,7 @@ table.timetable-table
   text-align: center;
   padding: 8px;
   line-height: 1.428571429;
-  vertical-align: top;
+  vertical-align: center;
   border-top: 1px solid #dddddd;
 }
 .timetable-table-bordered > thead > th,.timetable-table-bordered > tbody > tr > td
@@ -76,14 +76,9 @@ table.timetable-table
 font-size:1.25em;
 }
 .timetable-table > thead th
-.month
+.place
 {
-font-size:0.8em;
+font-size:24pt;
 vertical-align:top;
-}
-.timetable-table > thead th 
-.day
-{
-font-size:0.6em;
 }
 
