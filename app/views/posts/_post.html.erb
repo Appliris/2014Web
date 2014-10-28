@@ -1,9 +1,5 @@
 <div class="row post">
-  <span class="author">
-    <%= post.user.username %>
-  </span>
-  <p>
+    <%= post.user.username %>:
   <%= post.body %>
-  </p>
   <%= image_tag post.image_url(:thumb) %>
 </div>

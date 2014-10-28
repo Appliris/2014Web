@@ -45,3 +45,5 @@ gem 'devise'
 #picture gems
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
+#favorite gem
+gem 'activerecord-reputation-system', github: 'NARKOZ/activerecord-reputation-system', branch: 'rails4'
