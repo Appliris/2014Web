@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'projects/list'
+  root 'projects#list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
