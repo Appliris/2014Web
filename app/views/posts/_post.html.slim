@@ -1,4 +1,4 @@
-.row.post
+.rowpost
   = post.id
   = link_to "like",  {:controller => "posts", :id => post.id ,:action => "like"},{:method => "GET"}
   = post.user.username
