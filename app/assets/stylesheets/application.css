@@ -1,4 +1,19 @@
-/*Navigation bar*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require nav-bar
+ */
+
 #nav-bar{
   padding:0;
   margin:0;
@@ -12,10 +27,10 @@
   padding:0;
   margin:0;
   text-align:center;
-
 }
 
 #nav-bar li a{
+
   width:auto;
   color:#ffffff;
   font-size:20px;
@@ -28,18 +43,24 @@
 
 #nav-bar li a:hover{
   background:#741617;
+  width:auto;
+  color:#ffffff;
+  font-size:20px;
+  font-weight:bold;
+  padding:10px 0;
+  text-decoration:none;
+  display:block;
+  background:#A31F21;
 }
 
+
+
 /*端を丸くする*/
-#nav-bar li:first-child a{
-  border-radius:5px 0 0 5px;
-}
 #nav-bar li:last-child a{
   border-radius:0 5px 5px 0;
 }
 
 /*タイムテーブル*/
-
 table.timetable-table
 {
   max-width: 100%;
@@ -73,12 +94,13 @@ table.timetable-table
 }
 .timetable-table > thead th
 {
-font-size:1.25em;
+  font-size:1.25em;
 }
 .timetable-table > thead th
 .place
 {
-font-size:24pt;
-vertical-align:top;
+  font-size:24pt;
+  vertical-align:top;
 }
+
 
