@@ -1,50 +1,18 @@
 .button {
-	display: inline-block;
-	width: 200px;
-	height: 54px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 54px;
-	outline: none;
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    display: block;
+    background: #fff;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    border: 1px solid #DDD;
+    color:#111;
 }
-.button::before,
-.button::after {
-	position: absolute;
-	z-index: -1;
-	display: block;
-	content: '';
-}
-.button,
-.button::before,
-.button::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-.button {
-	position: relative;
-	z-index: 2;
-	background-color: #fff;
-	border: 2px solid #A31F21;
-	color: #A31F21;
-	line-height: 50px;
-	overflow: hidden;
-}
+ 
 .button:hover {
-	color: #fff;
-    background: #A31F21;
+    box-shadow: 0 0 10px #A31F21;
 }
-.button::after {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-transform: scale(.5);
-    transform: scale(.5);
-}
-
 .rowpost {
     padding: 20px;
     background: #fff;
@@ -56,8 +24,8 @@
     -webkit-box-shadow: 2px 2px 3px 3px #ddd;
 }
 .rowpost:hover {
-    -moz-box-shadow: 10px 3px 15px #A31F21;
-    -webkit-box-shadow: 10px 3px 15px #A31F21;
+    -moz-box-shadow: 5px 5px 10px #A31F21;
+    -webkit-box-shadow: 5px 5px 10px #A31F21;
 }
 
 .form-control {
@@ -76,7 +44,7 @@
 .post-body {
     margin-left:1em;
 }
-.post-form {
+.form-post {
     position:relative;
     margin:0 auto;
     width:80%;
@@ -84,6 +52,12 @@
 .form-file{
     text-align: right; 
 }
+.form-button{
+    text-align: right;
+}
 .post-like {
     text-align:right;
-} 
+}
+.navbar-text {
+    text-align:right;
+}

@@ -7,9 +7,12 @@ h2
     br
     = f.text_field :username, autofocus: true
   div
+    = f.label :email
+    br
+    = f.email_field :email ,autofocus: true
+  div
     = f.label :password
     - if @validatable
-      i
         | (
         = @minimum_password_length
         |  characters minimum)
