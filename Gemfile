@@ -5,6 +5,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
+gem 'cloudinary'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
