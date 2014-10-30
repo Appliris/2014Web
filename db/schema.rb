@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141028144913) do
+ActiveRecord::Schema.define(version: 20141030011342) do
 
   create_table "posts", force: true do |t|
     t.text     "body"
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 20141028144913) do
   add_index "rs_reputations", ["target_id", "target_type"], name: "index_rs_reputations_on_target_id_and_target_type"
 
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
+    t.string   "email"
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
