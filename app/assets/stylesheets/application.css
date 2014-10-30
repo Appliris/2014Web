@@ -16,7 +16,7 @@
 *=require masonry/infinitescroll
 *= require_self
 *= require nav-bar
-*= require_tree .
+
  */
 
 #nav-bar{
