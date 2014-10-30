@@ -1,0 +1,39 @@
+/**** Base styles ****/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+.col1 { width: 80px; }
+.col2 { width: 180px; }
+.col3 { width: 280px; }
+.col4 { width: 380px; }
+.col5 { width: 480px; }
+
+.col1 img { max-width: 80px; }
+.col2 img { max-width: 180px; }
+.col3 img { max-width: 280px; }
+.col4 img { max-width: 380px; }
+.col5 img { max-width: 480px; }
+
+.masonry {
+  background: #FFF;
+  margin: 0 auto;
+  
+}
+
+
+.w2 { width:  120px; }
+.w3 { width:  180px; }
+.w4 { width:  240px; }
+
+.item.h2 { height: 100px; }
+.item.h3 { height: 130px; }
+.item.h4 { height: 180px; }
+/**** Clearfix ****/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

@@ -19,6 +19,10 @@ group :production do
 gem 'rails_12factor'
 end
 
+gem 'better_errors',group: [:development,:test]
+gem 'binding_of_caller',group:[:development,:test]
+
+gem 'masonry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 
