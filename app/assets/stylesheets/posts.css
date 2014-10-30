@@ -1,5 +1,5 @@
 .button {
-    width: 15%;
+    width: 30%;
     height: 10%;
     line-height: 50px;
     background: #fff;
@@ -52,7 +52,7 @@
     text-align: right; 
 }
 .form-button{
-    text-align: right;
+    text-align: center;
 }
 .post-like {
     text-align:right;
