@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
- 
+
   resources :posts, only: [:index,:create, :destroy,:like]
   resources :posts do
     member  do
@@ -9,9 +9,15 @@ Rails.application.routes.draw do
   end
   root 'posts#index'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  get 'projects/list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  get 'timetable/first'
+  get 'timetable/second'
+  get 'timetable/third'
+  get 'details/4building'
+  get 'details/6building'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

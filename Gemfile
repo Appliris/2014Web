@@ -1,17 +1,31 @@
 source 'https://rubygems.org'
 
 
+gem 'slim'
+gem 'slim-rails'
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
+
 group :development do
     gem 'sqlite3'
     gem 'html2slim'
 end
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+gem 'rails_12factor'
 end
+
+gem 'better_errors',group: [:development,:test]
+gem 'binding_of_caller',group:[:development,:test]
+
+gem 'masonry-rails'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,18 +59,18 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
 #confirm gems
 gem 'rails_admin'
 gem 'cancan'
 gem 'devise'
-#picture gems
-gem 'carrierwave'
-gem 'rmagick', :require => 'RMagick'
+
 #favorite gem
 gem 'activerecord-reputation-system', github: 'NARKOZ/activerecord-reputation-system', branch: 'rails4'
 #change2slim
-gem 'slim-rails'
+
 
 #erorr
 gem 'better_errors' # Better Errors本体
 gem 'binding_of_caller' # Better Errors上でREPLを使用するためのgem
+

@@ -1,0 +1,18 @@
+table{
+border-collapse:collapse;
+}
+table.times td{
+border:solid;
+height:50px;
+}
+table.place td{
+border-top-style: dotted;
+border-right-style: solid;
+border-bottom-style: dotted;
+border-left-style: solid;
+width:30%;
+height:50px;
+}
+td.jisage{
+height:25px !important;
+}
