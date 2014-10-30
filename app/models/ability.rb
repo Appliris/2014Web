@@ -38,7 +38,7 @@ class Ability
         can :read, :all # A
       end
     else
-      can :read, [] # B
+      can :read, :all # B
       can :create, [] # C
     end
   end

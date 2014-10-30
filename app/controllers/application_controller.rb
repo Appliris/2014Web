@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
      root_path
   end
   rescue_from CanCan::AccessDenied do |exception|
-    redirect_to root_path,301 
+        redirect_to root_url, :alert => exception.message
+     end
   end
-end

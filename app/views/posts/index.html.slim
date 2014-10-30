@@ -18,13 +18,12 @@ body
       |  | 
       = link_to "Login", new_user_session_path, :class => 'navbar-link'
   = form_for @post, html: { class: 'post-form'} do |f|
-    .form-group
-      .form-post
-        = f.text_area :body, class: 'form-control'
-      .form-file
-        = f.file_field :image,class: 'page_fine_name' 
-      .form-button
-        = f.submit '投稿', class: 'button'
-    .posts
-      = render @posts
+    .form-post
+      = f.text_area :body, class: 'form-control'
+    .form-file
+      = f.file_field :image,class: 'page_fine_name' 
+    .form-button
+      = f.submit 'submit', class: 'button'
+  .posts
+    = render @posts
 
