@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta name="keywords" content="template language"
+    meta name="viewport" content="width=device-width,user-scalable=no"
+    == stylesheet_link_tag "posts", "all","slim"
+    title Appliris
+body
+  .navbar-text
+    - if user_signed_in?
+      |  Logged in as 
+      strong
+        = current_user.username
+      |  | 
+      = link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'
+    - else
+      = link_to "Sign up", new_user_registration_path, :class => 'navbar-link'
+      |  | 
+      = link_to "Login", new_user_session_path, :class => 'navbar-link'
+  = form_for @post, html: { class: 'post-form'} do |f|
+    .form-post
+      = f.text_area :body, class: 'form-control'
+    .form-file
+      = f.file_field :image,class: 'page_fine_name' 
+    .form-button
+      = f.submit 'submit', class: 'button'
+    .p
+      |
+  .p
+    |		
+  .posts
+    = render @posts
+

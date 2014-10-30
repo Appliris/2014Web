@@ -1,0 +1,12 @@
+.rowpost
+  .post-user
+    = post.user.username
+  .post-body  
+    = post.body
+    .post-image
+      = image_tag post.image_url(:thumb)
+  .post-like
+    = link_to "like",  {:controller => "posts", :id => post.id ,:action => "like"},{:method => "GET"}
+    = post.reputation_for(:likes).to_i
+p.
+  |
