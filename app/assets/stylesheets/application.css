@@ -15,7 +15,8 @@
 *=require masonry/centered
 *=require masonry/infinitescroll
 *= require_self
-*= require nav-bar
+*= require_tree .
+ *= require nav-bar
 
  */
 
