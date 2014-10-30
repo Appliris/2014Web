@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 get 'details/4building'
 get 'details/6building'
+
 # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

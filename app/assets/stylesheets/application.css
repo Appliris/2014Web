@@ -10,6 +10,45 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+*= require_self
+*= require nav-bar
  */
+
+#nav-bar{
+padding:0;
+margin:0;
+list-style-type: none; 
+height:30px;
+}
+
+#nav-bar li{
+width:25%;
+float:left;
+padding:0;
+margin:0;
+text-align:center;
+
+}
+
+#nav-bar li a{
+width:auto;
+color:#ffffff;
+font-size:20px;
+font-weight:bold;
+padding:10px 0;
+text-decoration:none;
+display:block;
+background:#A31F21;
+}
+
+#nav-bar li a:hover{
+background:#741617;
+}
+
+/*端を丸くする*/
+#nav-bar li:first-child a{
+border-radius:5px 0 0 5px;
+}
+#nav-bar li:last-child a{
+border-radius:0 5px 5px 0;
+}

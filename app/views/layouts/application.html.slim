@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title
+      | Appliris
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    meta name="viewport" content="width=device-width,user-scalable=no"
+  body
+    div id="cssmenu"
+     ul 
+      li class='active'
+        =link_to 'top','https://github.com'
+      li 
+        =link_to 'TimeTable','http://Google.com'
+      li
+        =link_to 'About' ,'http://Google.com'
+      li
+        =link_to 'Contact','http://Yahoo.com'
+    = yield
