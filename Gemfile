@@ -49,3 +49,7 @@ gem 'rmagick', :require => 'RMagick'
 gem 'activerecord-reputation-system', github: 'NARKOZ/activerecord-reputation-system', branch: 'rails4'
 #change2slim
 gem 'slim-rails'
+
+#erorr
+gem 'better_errors' # Better Errors本体
+gem 'binding_of_caller' # Better Errors上でREPLを使用するためのgem
