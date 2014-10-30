@@ -8,3 +8,5 @@
   .post-like
     = link_to "like",  {:controller => "posts", :id => post.id ,:action => "like"},{:method => "GET"}
     = post.reputation_for(:likes).to_i
+p.
+  |

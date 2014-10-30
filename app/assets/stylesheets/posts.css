@@ -2,10 +2,11 @@
     width: 30%;
     height: 10%;
     line-height: 50px;
+    font-size:1.1em;
     background: #fff;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
-    border: 1px solid #DDD;
+    border: 2px solid #DDD;
     color:#111;
 }
  
@@ -19,6 +20,7 @@
     box-shadow: 2px 2px 3px 3px #ddd;
     margin:0 auto;
     width:80%;
+    height:80%;
     -moz-box-shadow: 2px 2px 3px 3px #ddd;
     -webkit-box-shadow: 2px 2px 3px 3px #ddd;
 }
@@ -53,6 +55,8 @@
 }
 .form-button{
     text-align: center;
+    font-size:2em;
+
 }
 .post-like {
     text-align:right;
@@ -63,4 +67,7 @@
 .post-form{
     width: 80%;
     margin:0 auto;
+}
+div.p {
+    height:4px;
 }
