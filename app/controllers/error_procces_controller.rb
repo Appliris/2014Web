@@ -1,2 +1,0 @@
-class ErrorProccesController < ApplicationController
-end

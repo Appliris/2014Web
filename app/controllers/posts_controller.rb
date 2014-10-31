@@ -5,11 +5,15 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = current_user.posts.build(post_params)
-    if @post.save
-      redirect_to root_path
-    else
+    if current_user == nil
       redirect_to error_procces_post_path
+    else
+      @post = current_user.posts.build(post_params)
+      if @post.save
+        redirect_to root_path
+      else
+        redirect_to error_procces_post_path
+      end
     end
   end
 
