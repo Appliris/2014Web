@@ -1,0 +1,2 @@
+class ErrorProccesController < ApplicationController
+end

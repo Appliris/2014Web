@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'projects/list'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  get 'error_procces/post'
   get 'timetable/first'
   get 'timetable/second'
   get 'timetable/third'
