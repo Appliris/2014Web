@@ -4,6 +4,7 @@ html
     meta name="keywords" content="template language"
     meta name="viewport" content="width=device-width,user-scalable=no"
     == stylesheet_link_tag "posts", "all","slim"
+    == stylesheet_link_tag "like","all","slim"
     title Appliris
 body
   .navbar-text
@@ -23,7 +24,7 @@ body
     .form-file
       = f.file_field :image,class: 'page_fine_name' 
     .form-button
-      = f.submit 'submit', class: 'button'
+      = f.submit '投稿', class: 'button'
     .p
       |
   .p

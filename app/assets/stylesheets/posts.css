@@ -60,7 +60,13 @@
 }
 .post-like {
     text-align:right;
+    height:100%;
 }
+.button_to {
+    text-align: right;
+    font-size:  2em;
+    height: 100%;
+}    
 .navbar-text {
     text-align:right;
 }
@@ -70,4 +76,7 @@
 }
 div.p {
     height:4px;
+}
+.post-num {
+    text-align:right;
 }
