@@ -7,7 +7,7 @@
       = image_tag post.image_url(:thumb)
     .empty
       .post-like
-        = button_to_by_get  "いいね！",{:controller => "posts", :id => post.id ,:action => "like"},{class: 'button-like'}
+        = button_to_by_get  "いいね！",{:controller => "posts", :id => post.id ,:action => "like"},{:style => 'display:inline',:class => 'button-like'}
       .post-num  
         = post.reputation_for(:likes).to_i
 p.
