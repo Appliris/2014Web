@@ -11,6 +11,9 @@
   display: block;
   zoom: 1;
 }
+.top{
+padding:0;
+}
 #cssmenu ul:after {
   content: " ";
   display: block;
@@ -34,23 +37,17 @@
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 15px 25px;
+  padding: 15px 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12pt;
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
   -ms-transition: color .25s;
   -o-transition: color .25s;
   transition: color .25s;
-}
-#cssmenu ul li a:hover {
-  color: #333333;
-}
-#cssmenu ul li a:hover:before {
-  width: 100%;
 }
 #cssmenu ul li a:after {
   content: "";
@@ -81,9 +78,6 @@
 #cssmenu ul li.last > a:after,
 #cssmenu ul li:last-child > a:after {
   display: none;
-}
-#cssmenu ul li.active a {
-  color: #333333;
 }
 #cssmenu ul li.active a:before {
   width: 100%;
