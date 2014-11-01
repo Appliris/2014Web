@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background: #f96e5b;
+  background: #448f3c;
   width: auto;
 }
 #cssmenu ul {
@@ -95,7 +95,8 @@
 #cssmenu.align-right li:first-child a:after {
   display: none;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 200px) {
   #cssmenu ul li {
     float: none;
     display: block;
