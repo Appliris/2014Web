@@ -71,22 +71,16 @@
 /*タイムテーブル*/
 table.timetable-table
 {
--webkit-writing-mode:tb-rl;
-  max-width: 100%;
-  background-color: transparent;
+background-color: transparent;
 }
 .timetable-table td
 {
   font-size:24pt;
 
 }
-.timetable-time td
-{
-  font-size:100%;
-}
 .timetable-table 
 {
-  width: 100%;
+
   margin-bottom: 20px;
   border-bottom: 1px solid #dddddd;
 }
