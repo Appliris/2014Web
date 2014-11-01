@@ -58,9 +58,8 @@
     font-size:2em;
 
 }
-.post-like {
-    text-align:right;
-    background-color:#62b5f6
+.like-button{
+text-align:right;
 }
 .navbar-text {
     text-align:right;
