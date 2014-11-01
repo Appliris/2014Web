@@ -10,7 +10,9 @@ html
   body
     div id="cssmenu"
      ul 
-      li class='active'
+      li class="mainicon"
+         =image_tag "icon.png",:size=>"70x70"
+      li 
         =link_to 'top',posts_path
       li 
         =link_to 'TimeTable',timetable_first_path
