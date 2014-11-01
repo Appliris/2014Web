@@ -1,0 +1,73 @@
+.button {
+    width: 30%;
+    height: 10%;
+    line-height: 50px;
+    font-size:60%;
+    background: #448f3c;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    border: 2px solid #DDD;
+    color:#111;
+}
+ 
+.button:hover {
+    box-shadow: 0 0 10px #A31F21;
+}
+.rowpost {
+    padding: 20px;
+    background: #fff;
+    border: 1px #ccc solid;
+    box-shadow: 2px 2px 3px 3px #ddd;
+    margin:0 auto;
+    width:80%;
+    height:80%;
+    -moz-box-shadow: 2px 2px 3px 3px #ddd;
+    -webkit-box-shadow: 2px 2px 3px 3px #ddd;
+}
+.rowpost:hover {
+    -moz-box-shadow: 5px 5px 10px #A31F21;
+    -webkit-box-shadow: 5px 5px 10px #A31F21;
+}
+
+.form-control {
+    border:0;
+    padding:10px;
+    font-size:1.1em;
+    font-family:Arial, sans-serif;
+    color:#aaa;
+    border:solid 1px #ccc;
+    width:100%;
+    margin:0 auto;
+    -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.post-body {
+    margin-left:1em;
+}
+.form-post {
+    position:relative;
+    margin:0 auto;
+    width:100%;
+}
+.form-file{
+    text-align: right; 
+}
+.form-button{
+    text-align: center;
+    font-size:2em;
+
+}
+.like-button{
+text-align:right;
+}
+.navbar-text {
+    text-align:right;
+}
+.post-form{
+    width: 80%;
+    margin:0 auto;
+}
+div.p {
+    height:4px;
+}
