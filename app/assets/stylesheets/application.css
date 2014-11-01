@@ -10,13 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+*= require nav-bar
 *=require masonry/transitions
 *=require masonry/basic
 *=require masonry/centered
 *=require masonry/infinitescroll
 *= require_self
 *= require_tree .
- *= require nav-bar
+
 
  */
 img.mainicon {
