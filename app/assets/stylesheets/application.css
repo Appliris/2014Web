@@ -66,15 +66,19 @@
   border-radius:0 5px 5px 0;
 }
 
+
+
 /*タイムテーブル*/
 table.timetable-table
 {
+-webkit-writing-mode:tb-rl;
   max-width: 100%;
   background-color: transparent;
 }
 .timetable-table td
 {
   font-size:150%;
+
 }
 .timetable-time td
 {
