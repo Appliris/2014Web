@@ -16,4 +16,4 @@
 /tmp
 *.swp
 Book/
-./public/uploads/
+/public/uploads
